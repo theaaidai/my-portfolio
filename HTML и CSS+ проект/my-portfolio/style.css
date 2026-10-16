@@ -1,0 +1,195 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #25243a;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #ffffff;
+}
+
+.logo {
+    color: #6956d8;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 24px;
+}
+
+.navigation a {
+    color: #34334a;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #6956d8;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(135deg, #ece9ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.greeting {
+    color: #6956d8;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #6956d8;
+}
+
+.description {
+    color: #646477;
+    margin-bottom: 28px;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #6956d8;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #5140b7;
+}
+
+/* content secrions */
+
+.section {
+    padding: 55px 8%;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section > p {
+    max-width: 650px;
+    color: #646477;
+}
+
+/* Skills */
+
+.scills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.scill {
+    padding: 14px 24px;
+    background-color: white;
+    border: 1 px solid #e2defb;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Project Card */
+
+.project-card {
+    max-width: 400px;
+    padding: 20px;
+    border-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5 px 20px rgba(30, 25, 70, 0.07);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #646477;
+    margin-bottom: 12px;
+}
+
+.project-card span {
+    color: #6956d8;
+    margin-bottom: 14px;
+}
+
+/* GitHub links */
+
+.github-links {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+    padding: 24px 8%;
+    text-align: center;
+    background-color: #25243a;
+    color: white;
+}
+
+/* Responsive Desing */
+
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .navigation {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}
